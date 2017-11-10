@@ -2,10 +2,12 @@
 <html>    
 <body id="body">
 
-
+<div id="thediv">
+<center>
 <p id="weekend">00</p>
 <p id="longbreak">00</p>
-
+</center>
+</div>
 
 
     
@@ -21,7 +23,20 @@
 </head>
     
 <style> 
-
+#thediv { 
+    height: 1000px;
+    width: 400px;
+    top: 100px;
+    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+    
+    
 #weekend {
     font-size: 260px;
     color: white;
@@ -40,17 +55,11 @@
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
-    margin: 0;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
     
 #longbreak {
     position: relative;
-    //top: -360px;
+    top: -250px;
     font-size: 120px;
     color: white;
     font-family: "Roboto";
@@ -66,12 +75,6 @@
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
-    margin: 0;
-    position: absolute;
-    top: 67%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
 
     
