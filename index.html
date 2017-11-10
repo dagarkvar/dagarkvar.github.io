@@ -67,6 +67,8 @@
     
 body {
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
 }
  
 
@@ -89,9 +91,9 @@ body {
     var bgi = "url('images/b" + randomtal + ".jpg')"
     body.style.backgroundImage = bgi
     
-    if (screen.width <= 480 ) {
-    location.href = './mobil';
-    }
+    //if (screen.width <= 480 ) {
+    //location.href = './mobil';
+    //}
     
     var thedate = new Date();
     thedate.setHours(16);
