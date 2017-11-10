@@ -1,5 +1,6 @@
 var date = {
-    jullov: new Date("December 22, 2017 16:00:00").getTime()
+    jullov: new Date("December 22, 2017 16:00:00").getTime(),
+    sportlov: new Date("December 22, 2017 16:00:00").getTime()
 }
 
 var lovdist = date.jullov - new Date().getTime()
