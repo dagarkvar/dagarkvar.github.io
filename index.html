@@ -89,7 +89,7 @@ body {
     var bgi = "url('images/b" + randomtal + ".jpg')"
     body.style.backgroundImage = bgi
     
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if (screen.width <= 480 ) {
     location.href = './mobil';
     }
     
