@@ -3,12 +3,10 @@
 <body id="body">
 
 
-<center>
 <p id="weekend">00</p>
 <p id="longbreak">00</p>
 
 
-</center>
 
     
 <head>
@@ -29,7 +27,7 @@
     color: white;
     font-family: "Roboto";
     position: relative;
-    top: -100px;
+    //top: -100px;
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -42,11 +40,17 @@
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
     
 #longbreak {
     position: relative;
-    top: -360px;
+    //top: -360px;
     font-size: 120px;
     color: white;
     font-family: "Roboto";
@@ -62,13 +66,17 @@
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+    margin: 0;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
     
 body {
     overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: scroll !important;
 }
  
 
