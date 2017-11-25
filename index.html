@@ -11,7 +11,13 @@
 
 </center>
 <div id="myProgress">
-  <div id="myBar"></div>
+  <div id="myBar">
+  <center>
+
+  <p id="percent"></p>
+
+  </center>
+  </div>
 </div>
 </div>
 
@@ -51,10 +57,17 @@
 }
 
 #myBar {
-  width: 100%;
+  width: 0%;
   height: 30px;
-  background-color: #4CAF50;
-  
+  background-color: #4CAF50; 
+}
+
+#percent {
+font-size: 24px;
+position: relative;
+top: 1px;
+color: white;
+font-family: "Roboto";
 }
 
 #weekend {
@@ -165,7 +178,29 @@ body {
         }
     else if (lovdays < 10 && lovdays > -1)
         document.getElementById("longbreak").innerHTML = "0" + lovdays;
-        
+		
+		
+
+  var mybar = document.getElementById("myBar");
+  var myprocent = document.getElementById("percent");   
+  var width = 0;
+  var id = setInterval(frame, 4);
+  function frame() {
+    if (width >= result) {
+      clearInterval(id);
+    } else {
+      width++; 
+      mybar.style.width = width + '%';
+	  if (width > "15") {
+	  myprocent.innerHTML = width * 1 + '%';
+	  }
+	  
+    }
+  }
+  
+ 
+  
+  
 </script>
 
 </body>

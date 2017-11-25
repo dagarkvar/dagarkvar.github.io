@@ -33,9 +33,4 @@ var day3 = Math.floor(diff / oneDay);
 var day4 = day3 - day2
 var framsteg = day4 / terminlangd
 
-var percent = framsteg;
-var result = parseFloat(percent) * 100.0;
-var result = result + "%"
-
-var elem = document.getElementById("myBar")
-elem.style.width = result
+var result = parseFloat(framsteg) * 100.0;
