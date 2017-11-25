@@ -36,7 +36,9 @@
 
 </head>
     
-<style> 
+<style>
+
+    
 #thediv { 
     height: 1000px;
     width: 400px;
@@ -47,6 +49,7 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+ 
 }
     
     
@@ -118,8 +121,8 @@ body {
  
 #body {
     background-size: cover;
-	width: 100%; 
-    height: 100%; 
+	width: 105%; 
+    height: 105%; 
     position: absolute; 
     left: 0px; 
     top: 0px; 
@@ -131,6 +134,14 @@ body {
     height:100%;
 }
  
+@media screen and (max-width: 480px) {
+  #myBar, #thediv {
+      width: auto;
+      
+  }
+   p{font-size: 2em;}
+}    
+
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto.ttf") format("truetype");
