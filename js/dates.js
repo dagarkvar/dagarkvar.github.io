@@ -11,8 +11,6 @@ var lovdays = Math.floor(lovdist / (1000 * 60 * 60 * 24));
 
 var lovdist = date.springbegin.getTime() - date.jullov.getTime()
 var terminlangd = Math.floor(lovdist / (1000 * 60 * 60 * 24));
-console.log(terminlangd)
-
 
 var lovdist = date.springbegin.getTime() - new Date().getTime()
 var day4 = Math.floor(lovdist / (1000 * 60 * 60 * 24));
@@ -20,4 +18,3 @@ var day4 = terminlangd - day4
 var framsteg = day4 / terminlangd
 
 var result = parseFloat(framsteg) * 100.0;
-console.log(result)
