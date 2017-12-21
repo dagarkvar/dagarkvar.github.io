@@ -1,6 +1,6 @@
 var date = {
     skolbegin: new Date("August 21, 2017 16:00:00"),
-	jullov: new Date("December 22, 2017 16:00:00"),
+	jullov: new Date("December 21, 2017 16:00:00"),
     sportlov: new Date("December 22, 2017 16:00:00")
 }
 
