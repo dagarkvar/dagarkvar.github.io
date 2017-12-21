@@ -26,7 +26,6 @@
 
     
 <head>
-<title>Dagar Kvar</title>
     <meta charset="UTF-8">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dagarkvar.github.io/">
@@ -200,7 +199,7 @@ body {
     else if (lovdays < 10 && lovdays > -1)
         document.getElementById("longbreak").innerHTML = "0" + lovdays;
 		
-		
+  document.title = "Dagar Kvar: " + lovdays
 
   var mybar = document.getElementById("myBar");
   var myprocent = document.getElementById("percent");   
