@@ -198,7 +198,7 @@ body {
     else if (lovdays < 10 && lovdays > -1)
         document.getElementById("longbreak").innerHTML = "0" + lovdays;
 
-  document.title = "Dagar Kvar: " + lovdays
+  document.title = "Dagar Kvar: " + document.getElementById("longbreak").innerHTML
 
   var mybar = document.getElementById("myBar");
   var myprocent = document.getElementById("percent");
