@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>    
+<html>
 <body>
 <div id="body">
     <img class="stretch" alt="" />
@@ -23,7 +23,7 @@
 </div>
 
 
-    
+
 <head>
     <meta charset="UTF-8">
     <meta property="og:type" content="website">
@@ -33,11 +33,11 @@
 
 
 </head>
-    
+
 <style>
 
-    
-#thediv { 
+
+#thediv {
     height: 1000px;
     width: 400px;
     position: relative;
@@ -47,10 +47,10 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
- 
+
 }
-    
-    
+
+
 #myProgress {
   width: 100%;
   background-color: #ddd;
@@ -62,7 +62,7 @@
 #myBar {
   width: 0%;
   height: 30px;
-  background-color: #4CAF50; 
+  background-color: #4CAF50;
 }
 
 #percent {
@@ -92,7 +92,7 @@ font-family: "Roboto";
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
 }
-    
+
 #longbreak {
     position: relative;
     top: -300px;
@@ -115,30 +115,30 @@ font-family: "Roboto";
 
 body {
 	overflow: hidden;
-}  
- 
+}
+
 #body {
     background-size: cover;
-	width: 105%; 
-    height: 105%; 
-    position: absolute; 
-    left: 0px; 
-    top: 0px; 
+	width: 105%;
+    height: 105%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
     z-index: 0;
 }
- 
+
 .stretch {
     width:100%;
     height:100%;
 }
- 
+
 @media screen and (max-width: 480px) {
   #myBar, #thediv {
       width: auto;
-      
+
   }
    p{font-size: 2em;}
-}    
+}
 
 @font-face {
   font-family: "Roboto";
@@ -152,43 +152,43 @@ body {
 
 <script type="text/javascript" src="./js/dates.js">
 </script>
-    
+
 <script>
     var randomtal = Math.floor(Math.random() * 14) + 1;
     var body = document.getElementById("body")
-    var bgi = "url('images/winter/b" + randomtal + ".jpeg')"
+    var bgi = "url('images/b" + randomtal + ".jpg')"
     body.style.backgroundImage = bgi
-    
+
     var thedate = new Date();
     thedate.setHours(16);
     thedate.setMinutes(00);
     thedate.setSeconds(00);
     thedate.setMilliseconds(00);
-    
+
     var diff = thedate.getDay() - 6;
-    
+
     if (diff > 0) {
         thedate.setDate(thedate.getDate() + 6);
     }
     else if (diff < 0) {
         thedate.setDate(thedate.getDate() + ((-1) * diff));
-    }   
-    
+    }
+
     var now = new Date().getTime();
     var fredag = new Date(thedate).getTime()
     var dist =  fredag - now;
-    
+
     var days = Math.floor(dist / (1000 * 60 * 60 * 24));
     var hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((dist % (1000 * 60)) / 1000);
-    
+
     if (days < 0) {
         var days = 0
-    }    
-    
+    }
+
     document.getElementById("weekend").innerHTML = "0" + days;
-    
+
     if (lovdays > 9 && lovdays < 100)
         document.getElementById("longbreak").innerHTML = lovdays;
     else if (lovdays > 99) {
@@ -197,29 +197,29 @@ body {
         }
     else if (lovdays < 10 && lovdays > -1)
         document.getElementById("longbreak").innerHTML = "0" + lovdays;
-		
+
   document.title = "Dagar Kvar: " + lovdays
 
   var mybar = document.getElementById("myBar");
-  var myprocent = document.getElementById("percent");   
+  var myprocent = document.getElementById("percent");
   var width = 0;
   var id = setInterval(frame, 4);
   function frame() {
     if (width >= result) {
       clearInterval(id);
     } else {
-      width++; 
+      width++;
       mybar.style.width = width + '%';
 	  if (width > "15") {
 	  myprocent.innerHTML = width * 1 + '%';
 	  }
-	  
+
     }
   }
-  
- 
-  
-  
+
+
+
+
 </script>
 
 </body>

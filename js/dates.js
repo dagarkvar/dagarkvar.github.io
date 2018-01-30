@@ -6,13 +6,13 @@ var date = {
     sportlov: new Date("December 22, 2017 16:00:00")
 }
 
-var lovdist = date.springbegin.getTime() - new Date().getTime()
+var lovdist = date.sommarlov.getTime() - new Date().getTime()
 var lovdays = Math.floor(lovdist / (1000 * 60 * 60 * 24));
 
-var lovdist = date.springbegin.getTime() - date.jullov.getTime()
+var lovdist = date.sommarlov.getTime() - date.springbegin.getTime()
 var terminlangd = Math.floor(lovdist / (1000 * 60 * 60 * 24));
 
-var lovdist = date.springbegin.getTime() - new Date().getTime()
+var lovdist = date.sommarlov.getTime() - new Date().getTime()
 var day4 = Math.floor(lovdist / (1000 * 60 * 60 * 24));
 var day4 = terminlangd - day4
 var framsteg = day4 / terminlangd
